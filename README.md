@@ -20,21 +20,6 @@ class usestatic
        System.out.println("in static block");
        b=a*64;
    }
-   static class nested
-   {
-       void met3()
-       {
-           System.out.println("non-static nested class method 3");
-           System.out.println("enter the value of a"+a);
-           System.out.println("enter the value of b"+b);
-           
-       }
-       void met4()
-       {
-           System.out.println("in static method of nested class");
-       }
-       
-   }
 }
 class Main
 {
@@ -44,9 +29,6 @@ class Main
         usestatic s=new usestatic();
         s.met1();
         s.met2();
-        usestatic.nested o=new usestatic.nested();
-        o.met3();
-        o.met4();
     }
 }
        
